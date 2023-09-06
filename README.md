@@ -28,6 +28,6 @@ Two GUIDEseq datasets have been used:
 
 [multiple sequence alignments](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/OT-msa)
 
-[ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideogram.ipynb](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/ideograms)
+[ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
 
 If notebooks are not rendered, you can use this website: [NBviewer](https://nbviewer.org/).
