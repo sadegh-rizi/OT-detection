@@ -1,12 +1,7 @@
 # OT-detection
 Off target effects of CRISPR/Cas9 or base editors
 
-## References:
-**1-Original GUIDEseq paper:**
-Tsai, S., Zheng, Z., Nguyen, N. et al. [GUIDE-seq enables genome-wide profiling of off-target cleavage by CRISPR-Cas nucleases](https://www.nature.com/articles/nbt.3117). Nat Biotechnol 33, 187–197 (2015). 
 
-**2- CHANGEseq paper:** 
-Lazzarotto, C.R., Malinin, N.L., Li, Y. et al. [CHANGE-seq reveals genetic and epigenetic effects on CRISPR–Cas9 genome-wide activity.](https://www.nature.com/articles/s41587-020-0555-7) Nat Biotechnol 38, 1317–1327 (2020). 
 
 # Overview:
 Hypothesis: Our hypothesis is that Cas9 has two modes of searching through the genome, a 3D search before binding to DNA and then 2D search after it binds to one site. A prediction of this hypothesis is that sequences that partially match the gRNA target site and are nearby the target should be targeted more often that those that are far from the target site.
@@ -31,3 +26,16 @@ Two GUIDEseq datasets have been used:
 [ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
 
 If notebooks are not rendered, you can use this website: [NBviewer](https://nbviewer.org/).
+
+
+# 
+The range of indel mutation frequencies we detected ranged from 0.03% to 60.1%. Notably, we observed positive linear correlations between GUIDE-seq read counts and indel mutation frequencies for off-target sites of all five RGNs (Figs. 3b–f). Thus, we conclude that GUIDE-seq read counts for a given site provide a quantitative measure of the cleavage efficiency of that sequence by an RGN.[1] 
+![image](https://github.com/sadegh-rizi/OT-detection/assets/42430383/618ef25c-cf14-41b0-90d5-7fc2569e17bf)
+
+## References:
+**1-Original GUIDEseq paper:**
+Tsai, S., Zheng, Z., Nguyen, N. et al. [GUIDE-seq enables genome-wide profiling of off-target cleavage by CRISPR-Cas nucleases](https://www.nature.com/articles/nbt.3117). Nat Biotechnol 33, 187–197 (2015). 
+
+**2- CHANGEseq paper:** 
+Lazzarotto, C.R., Malinin, N.L., Li, Y. et al. [CHANGE-seq reveals genetic and epigenetic effects on CRISPR–Cas9 genome-wide activity.](https://www.nature.com/articles/s41587-020-0555-7) Nat Biotechnol 38, 1317–1327 (2020). 
+
