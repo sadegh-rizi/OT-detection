@@ -25,10 +25,22 @@ Two GUIDEseq datasets have been used:
 
 [ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
 
+
 If notebooks are not rendered, you can use this website: [NBviewer](https://nbviewer.org/).
 
 
-# 
+## Ideograms:
+In these ideograms, off-target events are shown as labels and gene density is used as an overlay.
+[ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
+
+In these ideograms, off-target events are shown as labels and pam density is used as overlay. (PAM: 'NGG')
+[ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms_w100000)
+
+Here a heatmap of PAM density(red) is compared with a heatmap of off-target density(blue).
+![image]([ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
+
+
+## Using the number of guide seq reads as a proxy for off-target frequency 
 The range of indel mutation frequencies we detected ranged from 0.03% to 60.1%. Notably, we observed positive linear correlations between GUIDE-seq read counts and indel mutation frequencies for off-target sites of all five RGNs (Figs. 3b–f). Thus, we conclude that GUIDE-seq read counts for a given site provide a quantitative measure of the cleavage efficiency of that sequence by an RGN.[1] 
 ![image](https://github.com/sadegh-rizi/OT-detection/assets/42430383/618ef25c-cf14-41b0-90d5-7fc2569e17bf)
 
