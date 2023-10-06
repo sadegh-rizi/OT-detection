@@ -34,9 +34,9 @@ In these ideograms, off-target events are shown as labels and gene density is us
 [ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
 
 In these ideograms, off-target events are shown as labels and pam density is used as overlay. (PAM: 'NGG')
-[ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms_w100000)
+[ideograms](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/ideograms_pam_w100000)
 
-Here a heatmap of PAM density(red) is compared with a heatmap of off-target density(blue).
+Here a heatmap of PAM density (red) is compared with a heatmap of off-target density (blue).
 ![heatmap of pam and ot](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms_pam_w100000/0all_gRNAs.png?raw=true "PAM density against off-target density")
 
 
