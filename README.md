@@ -37,7 +37,7 @@ In these ideograms, off-target events are shown as labels and pam density is use
 [ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms_w100000)
 
 Here a heatmap of PAM density(red) is compared with a heatmap of off-target density(blue).
-![image]([ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
+![heatmap of pam and ot](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms?raw=true "PAM density against off-target density")
 
 
 ## Using the number of guide seq reads as a proxy for off-target frequency 
