@@ -47,6 +47,7 @@ Here a heatmap of PAM density (red) is compared with a heatmap of off-target den
 The range of indel mutation frequencies we detected ranged from 0.03% to 60.1%. Notably, we observed positive linear correlations between GUIDE-seq read counts and indel mutation frequencies for off-target sites of all five RGNs (Figs. 3b–f). Thus, we conclude that GUIDE-seq read counts for a given site provide a quantitative measure of the cleavage efficiency of that sequence by an RGN.[1] 
 
 <br>
+
 ![image](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7652380/bin/nihms-1591991-f0014.jpg)
 
 GUIDE-seq read counts are strongly correlated with indel and tag integration frequencies in human primary T-cells.
