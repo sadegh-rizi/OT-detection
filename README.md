@@ -25,13 +25,33 @@ Two GUIDEseq datasets have been used:
 
 [ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
 
+
 If notebooks are not rendered, you can use this website: [NBviewer](https://nbviewer.org/).
 
 
-# 
-The range of indel mutation frequencies we detected ranged from 0.03% to 60.1%. Notably, we observed positive linear correlations between GUIDE-seq read counts and indel mutation frequencies for off-target sites of all five RGNs (Figs. 3b–f). Thus, we conclude that GUIDE-seq read counts for a given site provide a quantitative measure of the cleavage efficiency of that sequence by an RGN.[1] 
+## Ideograms:
+In these ideograms, off-target events are shown as labels and gene density is used as an overlay.
+[ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms)
+
+In these ideograms, off-target events are shown as labels and pam density is used as overlay. (PAM: 'NGG')
+[ideograms](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/ideograms_pam_w100000)
+
+Here a heatmap of PAM density (red) is compared with a heatmap of off-target density (blue).
+![heatmap of pam and ot](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms_pam_w100000/0all_gRNAs.png?raw=true "PAM density against off-target density")
+
+
+## GUIDEseq reads against indel frequency (Using the number of guide seq reads as a proxy for off-target frequency )
+
 ![image](https://github.com/sadegh-rizi/OT-detection/assets/42430383/618ef25c-cf14-41b0-90d5-7fc2569e17bf)
 
+The range of indel mutation frequencies we detected ranged from 0.03% to 60.1%. Notably, we observed positive linear correlations between GUIDE-seq read counts and indel mutation frequencies for off-target sites of all five RGNs (Figs. 3b–f). Thus, we conclude that GUIDE-seq read counts for a given site provide a quantitative measure of the cleavage efficiency of that sequence by an RGN.[1] 
+
+<br>
+
+![image](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7652380/bin/nihms-1591991-f0014.jpg)
+
+GUIDE-seq read counts are strongly correlated with indel and tag integration frequencies in human primary T-cells.
+a, Scatterplots showing correlation between indel frequencies and GUIDE-seq read counts at on- and off-target sites, and b, tag integration and GUIDE-seq read counts at on- and off-target sites. (a-b) Correlation between two samples was calculated using Pearson’s correlation coefficient. [2]
 ## References:
 **1-Original GUIDEseq paper:**
 Tsai, S., Zheng, Z., Nguyen, N. et al. [GUIDE-seq enables genome-wide profiling of off-target cleavage by CRISPR-Cas nucleases](https://www.nature.com/articles/nbt.3117). Nat Biotechnol 33, 187–197 (2015). 
