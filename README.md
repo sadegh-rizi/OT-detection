@@ -9,14 +9,22 @@ Hypothesis: Our hypothesis is that Cas9 has two modes of searching through the g
 
 
 
-# Off target detection methods
-Data for off-target detection originates from different methods. For each individual method, off-target coordinates are plotted against a proxy of frequency(number of reads). The correlation between number of reads and frequency of cleavage is outlined below.
 
-## GUIDEseq reads against indel frequency (Using the number of guide seq reads as a proxy for off-target frequency )
+
+
+# Off target detection methods
+Data for off-target detection originates from different methods. These methods can be classified into two main categories: Experimental and computational. Experimental method subdivide into in vitro, cell-based or in vivo approaches. Computational methods consist of alignment based and scoring based approaches.
+In this project two cell-based methods(GUIDEseq and BLISS), one in vitro method(CHANGEseq) and one computational model(Cass-OFFinder) were employed.
+For each individual method, off-target distribution is illustrated as an ideogram or scatterplot. 
+## Measures for frequency of off-target events:
+In **GUIDEseq** and **CHANGEseq**, the number of reads were used as a proxy of frequency. The correlation between number of reads and frequency of cleavage is outlined below.
+
+### GUIDEseq reads against indel frequency (Using the number of guide seq reads as a proxy for off-target frequency )
 
 ![image](https://github.com/sadegh-rizi/OT-detection/assets/42430383/618ef25c-cf14-41b0-90d5-7fc2569e17bf)
 
 The range of indel mutation frequencies we detected ranged from 0.03% to 60.1%. Notably, we observed positive linear correlations between GUIDE-seq read counts and indel mutation frequencies for off-target sites of all five RGNs (Figs. 3b–f). Thus, we conclude that GUIDE-seq read counts for a given site provide a quantitative measure of the cleavage efficiency of that sequence by an RGN.[1] 
+
 
 <br>
 
@@ -24,6 +32,13 @@ The range of indel mutation frequencies we detected ranged from 0.03% to 60.1%. 
 
 GUIDE-seq read counts are strongly correlated with indel and tag integration frequencies in human primary T-cells.
 a, Scatterplots showing correlation between indel frequencies and GUIDE-seq read counts at on- and off-target sites, and b, tag integration and GUIDE-seq read counts at on- and off-target sites. (a-b) Correlation between two samples was calculated using Pearson’s correlation coefficient. [2]
+
+For **BLISS**, a DSB score was reported which is described as the number of unique DSB ends aligned to the target per $10^{5}$ unique BLISS reads
+
+**Cass-OFFinder** looks for off-targets solely based on homology to the on-target and it doesn't provide any scoring or ranking system for OTs.
+
+
+
 
 ## Guideseq
 58 gRNAs
@@ -55,11 +70,11 @@ Two GUIDEseq datasets have been used:
 
 
 ### Ideograms:
-In these ideograms, off-target events are shown as labels and gene density is used as an overlay.
+In the following ideograms, off-target events are shown as labels and gene density is used as an overlay.
 
 [ideograms](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/ideograms?raw=true)
 
-In these ideograms, off-target events are shown as labels and pam density is used as overlay. Only canonical PAMs('NGG') were considered as they constitute the majority of cleavage activities. 
+In the following ideograms, off-target events are shown as labels and pam density is used as overlay. Only canonical PAMs('NGG') were considered as they constitute the majority of cleavage activities. 
 
 [ideograms](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/ideograms_pam_w100000)
 
@@ -72,7 +87,7 @@ A heatmap of PAM density (red) is compared with a heatmap of off-target density 
 ## Changeseq method
 112 gRNAs
 off-targets with reads with more than 100 reads were considered. 
-The distribution of off-targets does manifest any discernible pattern. There are so many off-targets especially for promiscuous gRNAs. 
+The distribution of off-targets does manifest any discernible pattern. A substantial number of off-targets are produced especially for promiscuous gRNAs. 
 
 ## Bliss
 2 gRNAs: VEGFA and EMX1. Results were compared against Guideseq.
