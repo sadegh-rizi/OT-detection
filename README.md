@@ -8,16 +8,12 @@ Hypothesis: Our hypothesis is that Cas9 has two modes of searching through the g
 
 
 
-
-
-
-
-# Off target detection methods
-Data for off-target detection originates from different methods. These methods can be classified into two main categories: Experimental and computational. Experimental method subdivide into in vitro, cell-based or in vivo approaches. Computational methods consist of alignment based and scoring based approaches.
-In this project two cell-based methods(GUIDEseq and BLISS), one in vitro method(CHANGEseq) and one computational model(Cass-OFFinder) were employed.
+# Off-target detection methods
+Data for off-target detection originates from different methods. These methods can be classified into two main categories: Experimental and computational. Experimental method subdivide into in vitro, cell-based, or in vivo approaches. Computational methods consist of alignment-based and scoring-based approaches.
+In this project, two cell-based methods(GUIDEseq and BLISS), one in vitro method(CHANGEseq), and one computational model(Cass-OFFinder) were employed.
 For each individual method, off-target distribution is illustrated as an ideogram or scatterplot. 
 ## Measures for frequency of off-target events:
-In **GUIDEseq** and **CHANGEseq**, the number of reads were used as a proxy of frequency. The correlation between number of reads and frequency of cleavage is outlined below.
+In **GUIDEseq** and **CHANGEseq**, the number of reads was used as a proxy of frequency. The correlation between number of reads and frequency of cleavage is outlined below.
 
 ### GUIDEseq reads against indel frequency (Using the number of guide seq reads as a proxy for off-target frequency )
 
@@ -43,9 +39,9 @@ For **BLISS**, a DSB score was reported which is described as the number of uniq
 ## Guideseq
 58 gRNAs
 off-targets from guideseq are visualized on ideograms with  pam density serving as an overlay. 
-A frequency table of off-targets from all gRNAs was used to compare pam density heatmap and off-target density heatmap side by side in an ideogram. The pam dense regions roughly align with off-target dense regions.
-- PAM density table was created by adding the number of 'NGG' occurences in window slides of size 1e5.
-- off-target density table was created by adding the number of guideseq reads-as a measure of frequency- in window slides of size 1e6.
+A frequency table of off-targets from all gRNAs was used to compare PAM density heatmap and off-target density heatmap side by side in an ideogram. The PAM-dense regions roughly align with off-target dense regions.
+- PAM density table was created by adding the number of 'NGG' occurrences in window slides of size 1e5.
+- The off-target density table was created by adding the number of guideseq reads- as a measure of frequency- in window slides of size 1e6.
 
 
 Two GUIDEseq datasets have been used:
@@ -84,16 +80,30 @@ In the following ideograms, off-target events are shown as labels and pam densit
 A heatmap of PAM density (red) is compared with a heatmap of off-target density (blue) in the figure below.
 ![heatmap of pam and ot](https://raw.githubusercontent.com/sadegh-rizi/OT-detection/main/guide-seq/ideograms_pam_w100000/pngs/0all_gRNAs_log.png?raw=true "PAM density against off-target density")
 
-## Changeseq method
+## Changeseq 
 112 gRNAs
 off-targets with reads with more than 100 reads were considered. 
 The distribution of off-targets does manifest any discernible pattern. A substantial number of off-targets are produced especially for promiscuous gRNAs. 
 
+[plots](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/plots/changeseq)
+
+[notebook](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/CHANGEseq.ipynb)
+
 ## Bliss
 2 gRNAs: VEGFA and EMX1. Results were compared against Guideseq.
 
+[plots](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/plots/bliss)
+
+[notebook](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/BLISS.ipynb)
+
 ## Cass-offinder
 putative off-targets up to six mismatches are found using Cass-offinder. No bulges were allowed. Further investigation is required on the matter of bulges.
+
+[plots](https://github.com/sadegh-rizi/OT-detection/tree/main/guide-seq/plots/cass_offinder)
+
+[notebook](https://github.com/sadegh-rizi/OT-detection/blob/main/guide-seq/Cas-OFFinder.ipynb)
+
+
 
 ## Mechanism of Crispr Target Search
 
@@ -110,10 +120,10 @@ The initial step in Cas9 target search is finding and recognizing a PAM sequence
 ## Discussion
 In vitro methods detect lots of off-target events and can have great sensitivity. However, the number of off-targets found by these methods is too great, many of which can not be validated by cell-based/in-vivo methods. In addition, due to abundance of detected off-targets, they seem to be distributed all around the genome without any discernible pattern.
 
-Cell based methods have a much lower false positive rate. Nevertheless, their miss rate(FNR) is higher and might miss some bona-fide off-target events. 
+Cell-based methods have a much lower false positive rate. Nevertheless, their miss rate(FNR) is higher, and might miss some bonafide off-target events. 
 
-Drawing insights from the distribution of off-target events and exisiting stuides on CRISPR target search mechanism, we propose the following hypothesis:
- CRISPR has two modes of 3D and 1D search. During 3D search, Cascade collides non-specifically with DNA. Subsequently, it interrogates PAMs by lateral diffusion. Upon locating a PAM, complementarity is assessed. If sufficient complementarity is present and a stable R-loop is formed, The target will be cleaved. Otherwise, Cascade either diffuses laterally to search for another PAM or it dissociates from DNA to start another round of 3D search. A predicition of this hypothesis is that Cascade spends more time in PAM dense regions and off-target events occur more frequently in these places.  
+Drawing insights from the distribution of off-target events and existing studies on CRISPR target search mechanism, we propose the following hypothesis:
+ CRISPR has two modes of 3D and 1D search. During 3D search, Cascade collides non-specifically with DNA. Subsequently, it interrogates PAMs by lateral diffusion. Upon locating a PAM, complementarity is assessed. If sufficient complementarity is present and a stable R-loop is formed, The target will be cleaved. Otherwise, Cascade either diffuses laterally to search for another PAM or it dissociates from DNA to start another round of 3D search. A prediction of this hypothesis is that Cascade spends more time in PAM-dense regions and off-target events occur more frequently in these places.  
  
 
 
