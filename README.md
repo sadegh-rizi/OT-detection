@@ -39,7 +39,7 @@ For **BLISS**, a DSB score was reported which is described as the number of uniq
 ## Guideseq
 58 gRNAs
 off-targets from guideseq are visualized on ideograms with  pam density serving as an overlay. 
-A frequency table of off-targets from all gRNAs was used to compare PAM density heatmap and off-target density heatmap side by side in an ideogram. The PAM-dense regions roughly align with off-target dense regions.
+A frequency table of off-targets from all gRNAs was used to compare PAM density heatmap and off-target density heatmap side by side in an ideogram. The PAM-dense regions roughly align with off-target dense regions. Further investigation is required to prove significant correlation between PAM density and off-target cleavage frequency.
 - PAM density table was created by adding the number of 'NGG' occurrences in window slides of size 1e5.
 - The off-target density table was created by adding the number of guideseq reads- as a measure of frequency- in window slides of size 1e6.
 
