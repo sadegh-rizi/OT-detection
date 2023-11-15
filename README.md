@@ -118,12 +118,12 @@ The initial step in Cas9 target search is finding and recognizing a PAM sequence
 3. Aldag, P. et al. Dynamic interplay between target search and recognition for a Type I CRISPR-Cas system. Nat Commun 14, 3654 (2023).
  
 ## Discussion
-In vitro methods detect lots of off-target events and can have great sensitivity. However, the number of off-targets found by these methods is too great, many of which can not be validated by cell-based/in-vivo methods. In addition, due to abundance of detected off-targets, they seem to be distributed all around the genome without any discernible pattern.
+In vitro methods detect lots of off-target events and can have great sensitivity. However, the number of off-targets found by these methods is too great, many of which can not be validated by cell-based/in-vivo methods. In addition, due to the abundance of detected off-targets, they seem to be distributed all around the genome without any discernible pattern.
 
 Cell-based methods have a much lower false positive rate. Nevertheless, their miss rate(FNR) is higher, and might miss some bonafide off-target events. 
 
 Drawing insights from the distribution of off-target events and existing studies on CRISPR target search mechanism, we propose the following hypothesis:
- CRISPR has two modes of 3D and 1D search. During 3D search, Cascade collides non-specifically with DNA. Subsequently, it interrogates PAMs by lateral diffusion. Upon locating a PAM, complementarity is assessed. If sufficient complementarity is present and a stable R-loop is formed, The target will be cleaved. Otherwise, Cascade either diffuses laterally to search for another PAM or it dissociates from DNA to start another round of 3D search. A prediction of this hypothesis is that Cascade spends more time in PAM-dense regions and off-target events occur more frequently in these places.  
+ CRISPR has two modes of 3D and 1D search. During 3D search, Cascade collides non-specifically with DNA. Subsequently, it interrogates PAMs by lateral diffusion. Upon locating a PAM, complementarity is assessed. If sufficient complementarity is present and a stable R-loop is formed, The target will be cleaved. Otherwise, Cascade either diffuses laterally to search for another adjacent PAM or it dissociates from DNA to start another round of 3D search. A prediction of this hypothesis is that Cascade spends more time in PAM-dense regions and off-target events occur more frequently in these places.  
  
 
 
@@ -135,9 +135,9 @@ Tsai, S., Zheng, Z., Nguyen, N. et al. [GUIDE-seq enables genome-wide profiling 
 Lazzarotto, C.R., Malinin, N.L., Li, Y. et al. [CHANGE-seq reveals genetic and epigenetic effects on CRISPR–Cas9 genome-wide activity.](https://www.nature.com/articles/s41587-020-0555-7) Nat Biotechnol 38, 1317–1327 (2020). 
 
 
-4. Globyte, V., Lee, S. H., Bae, T., Kim, J. & Joo, C. CRISPR/Cas9 searches for a protospacer adjacent motif by lateral diffusion. EMBO J 38, e99466 (2019).
+3. Globyte, V., Lee, S. H., Bae, T., Kim, J. & Joo, C. CRISPR/Cas9 searches for a protospacer adjacent motif by lateral diffusion. EMBO J 38, e99466 (2019).
 
-5. Sternberg, S. H., Redding, S., Jinek, M., Greene, E. C. & Doudna, J. A. DNA interrogation by the CRISPR RNA-guided endonuclease Cas9. Nature 507, 62–67 (2014).
+4. Sternberg, S. H., Redding, S., Jinek, M., Greene, E. C. & Doudna, J. A. DNA interrogation by the CRISPR RNA-guided endonuclease Cas9. Nature 507, 62–67 (2014).
 
 5. Aldag, P. et al. Dynamic interplay between target search and recognition for a Type I CRISPR-Cas system. Nat Commun 14, 3654 (2023).
 
