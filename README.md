@@ -123,7 +123,7 @@ In vitro methods detect lots of off-target events and can have great sensitivity
 Cell-based methods have a much lower false positive rate. Nevertheless, their miss rate(FNR) is higher, and might miss some bonafide off-target events. 
 
 Drawing insights from the distribution of off-target events and existing studies on CRISPR target search mechanism, we propose the following hypothesis:
- CRISPR has two modes of 3D and 1D search. During 3D search, Cascade collides non-specifically with DNA. Subsequently, it interrogates PAMs by lateral diffusion. Upon locating a PAM, complementarity is assessed. If sufficient complementarity is present and a stable R-loop is formed, The target will be cleaved. Otherwise, Cascade either diffuses laterally to search for another adjacent PAM or it dissociates from DNA to start another round of 3D search. A prediction of this hypothesis is that Cascade spends more time in PAM-dense regions and off-target events occur more frequently in these places.  
+ CRISPR has two modes of 3D and 1D search. During 3D search, Cas9 collides non-specifically with DNA. Subsequently, it interrogates PAMs by lateral diffusion. Upon locating a PAM, complementarity is assessed. If sufficient complementarity is present and a stable R-loop is formed, The target will be cleaved. Otherwise, Cas9 either diffuses laterally to search for another adjacent PAM or it dissociates from DNA to start another round of 3D search. A prediction of this hypothesis is that Cas9 spends more time in PAM-dense regions and off-target events occur more frequently in these places.  
  
 
 
